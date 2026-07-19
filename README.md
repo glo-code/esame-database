@@ -8,8 +8,6 @@
 
 ---
 
-Questo repository contiene il progetto svolto per l'esame di Basi di Dati...
-
 Il progetto (per l'esame di Analisi dei dati e Big data) prevede la creazione di tre diversi paradigmi di database (Relazionale, NoSQL Documentale e NoSQL a Grafi) per tre diverse tipologie di situazioni del mondo reale.
 
 ---
