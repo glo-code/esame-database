@@ -1,6 +1,16 @@
-# esame-database
+# esame-analisi_dei_dati_e_big_data
 
-Il progetto prevede la creazione di tre diversi paradigmi di database (Relazionale, NoSQL Documentale e NoSQL a Grafi) per tre diverse tipologie di situazioni del mondo reale.
+**Studente:** Gloria Martina Annarita
+**Matricola:** 20100235  
+**Corso di Laurea magistrale:** [2 anno/Data Science per le scienze umane e sociali]  
+**Anno Accademico:** 2025/2026  
+**Docente:** Prof.re Marco Del Coco
+
+---
+
+Questo repository contiene il progetto svolto per l'esame di Basi di Dati...
+
+Il progetto (per l'esame di Analisi dei dati e Big data) prevede la creazione di tre diversi paradigmi di database (Relazionale, NoSQL Documentale e NoSQL a Grafi) per tre diverse tipologie di situazioni del mondo reale.
 
 ---
 
