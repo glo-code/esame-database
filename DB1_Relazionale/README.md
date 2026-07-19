@@ -78,7 +78,7 @@ Questa scelta permette di mantenere separati gli attributi specifici delle sotto
 
 Le relazioni, essendo tutte binarie di cardinalità 1:N, si traducono aggiungendo la chiave primaria della tabella "lato 1" come chiave esterna nella tabella "lato N", senza la necessità di tabelle di giunzione intermedie.
 
-![Schema Logico](./immagini/Schema_logico_DEFINITIVO.png)
+![Schema Logico](./immagini/Schema%20logico%20DEFINITIVO.png)
 
 ---
 
