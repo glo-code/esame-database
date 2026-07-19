@@ -40,7 +40,7 @@ A differenza della BFS, la quale esplora i nodi livello per livello, il DFS dà 
 
 Nel caso dei nostri dati fittizi, il DFS ha riportato i seguenti risultati:
 
-![Risultato DFS](./immagini/visualizzazione%20DFS.png)
+![Risultato DFS](./immagini/visualizzazione_DFS.png)
 
 L’ordine prevede di intraprendere prima i corsi con argomenti di Matematica di base e di Python; successivamente, Algebra si attesta come prerequisito sia di Data Science che di Calcolo. Machine Learning presenta invece come prerequisito l’argomento Data Science. Questo rappresenta l’ordine logico in cui gli argomenti dovrebbero essere studiati, rispettando tutte le relazioni di propedeuticità definite nel grafo.
 
@@ -48,7 +48,7 @@ L’ordine prevede di intraprendere prima i corsi con argomenti di Matematica di
 
 Nel secondo caso si è optato per la categoria di algoritmi di Community Detection, utile a rivelare relazioni nascoste tra i nodi della rete e a identificare comunità. Prima di applicare l'algoritmo di community detection, è stata costruita una proiezione monopartita dei soli nodi studente. Due studenti vengono collegati da un arco quando hanno frequentato corsi che condividono gli stessi argomenti. Su questo nuovo grafo è quindi possibile individuare gruppi di studenti con interessi simili.
 
-![Proiezione Monopartita](./immagini/visualizzazione%20proiezione%20monopartita.png)
+![Proiezione Monopartita](./immagini/visualizzazione_proiezione_monopartita.png)
 
 Solo 4 studenti su 5 totali inseriti nel database risultano interconnessi per via degli argomenti condivisi, mentre uno degli studenti rimane escluso dal cluster.
 
@@ -56,6 +56,6 @@ Sulla base dei risultati ottenuti con la proiezione, è stato applicato l’algo
 
 L’algoritmo ha prodotto i seguenti risultati:
 
-![Risultato Louvain](./immagini/visualizzazione%20Louvain.png)
+![Risultato Louvain](./immagini/visualizzazione_Louvain.png)
 
 Nei nostri dati fittizi, la maggior parte dei nodi appartiene a una comunità principale, mentre un solo nodo è stato assegnato a un'altra comunità separata.
