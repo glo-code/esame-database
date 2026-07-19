@@ -1,6 +1,7 @@
 # esame-analisi_dei_dati_e_big_data
 
 **Studente:** Gloria Martina Annarita
+
 **Matricola:** 20100235  
 **Corso di Laurea magistrale:** [2 anno/Data Science per le scienze umane e sociali/UniSalento]  
 **Anno Accademico:** 2025/2026  
