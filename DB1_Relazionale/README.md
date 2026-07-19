@@ -50,7 +50,7 @@ Le relazioni individuate sono:
 *   **NOLEGGIO parte da RITIRO**: un noleggio inizia necessariamente da un solo e unico punto di gestione, mentre un punto di gestione può essere origine di 0 o N noleggi.
 *   **NOLEGGIO finisce in RICONSEGNA**: un noleggio termina in un solo e unico punto di gestione, mentre un punto di gestione può ricevere la riconsegna di 0 o N noleggi.
 
-![Schema E-R](./immagini/schema_E-R_DEFINITIVO.png)
+![Schema E-R](./DB1_Relazionale/immagini/schema%20E-R%20DEFINITIVO.png)
 
 > 📝 **Nota sullo Schema E-R:**
 > In una successiva fase di revisione del modello concettuale, è emerso che la relazione `STAZIONA IN` (inizialmente prevista tra le biciclette e i punti di gestione) risultava ridondante, per cui è stata eliminata nello schema logico e fisico. 
