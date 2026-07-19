@@ -2,7 +2,7 @@
 
 **Studente:** Gloria Martina Annarita
 **Matricola:** 20100235  
-**Corso di Laurea magistrale:** [2 anno/Data Science per le scienze umane e sociali]  
+**Corso di Laurea magistrale:** [2 anno/Data Science per le scienze umane e sociali/UniSalento]  
 **Anno Accademico:** 2025/2026  
 **Docente:** Prof.re Marco Del Coco
 
