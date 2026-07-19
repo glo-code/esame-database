@@ -1,0 +1,69 @@
+# index
+PUT /catalogo_prodotti
+{
+    "mappings": {
+        "properties": {
+            "prodotto_id": { "type": "keyword" },
+            "modello": { "type": "keyword" },
+            "descrizione": { "type": "text" },
+            "marca": { "type": "keyword" },
+            "categoria": { "type": "keyword" },
+            "prezzo": { "type": "float" },
+            "quantita_magazzino": { "type": "integer" },
+            "recensioni": { "type": "text" },
+            "punteggio_soddisfazione": { "type": "float" },
+            "data_acquisto": { "type": "date" },
+            "data_recensione": { "type": "date" },
+            "specifiche_tecniche": { "type": "text" },
+            "disponibile": { "type": "boolean" },
+            "valutazione_media": { "type": "float" },
+            "tags": { "type": "keyword" }
+        }
+    }
+}
+
+GET catalogo_prodotti/_mapping
+
+
+# document
+POST /catalogo_prodotti/_bulk
+{ "index": { "_id": "1" } }
+{ "prodotto_id": "P001", "modello": "Quantum X", "descrizione": "Display AMOLED con batteria a lunghissima durata da 5000mAh, ideale per il gaming mobile.", "marca": "TechCorp", "categoria": "Elettronica", "prezzo": 699.99, "quantita_magazzino": 50, "recensioni": "Telefono superbo, la batteria dura veramente due giorni interi di uso intenso!", "punteggio_soddisfazione": 4.8, "data_acquisto": "2026-06-10", "data_recensione": "2026-06-15", "specifiche_tecniche": "RAM 8GB, Memoria Interna 256GB, Processore Octa-Core 2.8GHz", "disponibile": true, "valutazione_media": 4.7, "tags": ["smartphone", "5g", "gaming", "novita"] }
+{ "index": { "_id": "2" } }
+{ "prodotto_id": "P002", "modello": "SoundPro Wireless", "descrizione": "Cuffie sovraurali con cancellazione attiva del rumore (ANC) di livello professionale.", "marca": "AudioWave", "categoria": "Elettronica", "prezzo": 149.50, "quantita_magazzino": 120, "recensioni": "Isolamento acustico incredibile, comode anche dopo molte ore di utilizzo.", "punteggio_soddisfazione": 4.5, "data_acquisto": "2026-07-01", "data_recensione": "2026-07-03", "specifiche_tecniche": "Driver da 40mm, Bluetooth 5.2, Autonomia 40 ore con ANC attivo", "disponibile": true, "valutazione_media": 4.5, "tags": ["audio", "cuffie", "wireless", "noise-cancelling"] }
+{ "index": { "_id": "3" } }
+{ "prodotto_id": "P003", "modello": "Trekker 3000", "descrizione": "Giacca tecnica isolante per alta montagna resistente a vento forte e pioggia battente.", "marca": "OutGear", "categoria": "Abbigliamento", "prezzo": 89.99, "quantita_magazzino": 0, "recensioni": "Molto calda e impermeabile. Forse un po' rigida nei movimenti, ma fa il suo dovere.", "punteggio_soddisfazione": 4.0, "data_acquisto": "2026-05-20", "data_recensione": "2026-05-25", "specifiche_tecniche": "Membrana impermeabile 10.000mm, Cuciture termonastrate, Tasca interna di sicurezza", "disponibile": false, "valutazione_media": 4.1, "tags": ["outdoor", "giacca", "trekking", "impermeabile"] }
+
+
+GET catalogo_prodotti/_search
+{
+  "size": 1
+}
+
+
+# full-search
+GET /catalogo_prodotti/_search
+{
+  "query": {
+    "match": {
+      "descrizione": "batteria"
+    }
+  }
+}
+
+#filter
+GET /catalogo_prodotti/_search
+{
+  "query": {
+    "bool": {
+      "must": {
+        "match": { "categoria": "Elettronica" }
+      },
+      "filter": {
+        "range": {
+          "prezzo": { "lt": 200.00 }
+        }
+      }
+    }
+  }
+}
