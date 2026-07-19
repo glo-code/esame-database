@@ -10,5 +10,5 @@ Cliccando sui link sottostanti è possibile accedere direttamente alle cartelle 
 
 *   **[DB1 - Database Relazionale](./DB1_Relazionale):** Database relazionale di noleggio biciclette per un'azienda. Contiene lo schema concettuale (E-R), lo schema logico, lo schema fisico e le query SQL.
 *   **[DB2 - Database NoSQL a Grafi](./DB2_Grafi):** Grafo della conoscenza riguardante una piattaforma di corsi online. Include l'implementazione degli algoritmi DFS e Louvain Modularity.
-*   **[DB3 - Database NoSQL Documentale](./DB3_Documentale):** Catalogo prodotti per un e-commerce (ElasticSearch). Contiene la definizione dei mapping dei documenti e le query booleane/full-text per il recupero dei dati.
+*   **[DB3 - Database NoSQL Documentale](./3_database_documentale_ecommerce):** Catalogo prodotti per un e-commerce (ElasticSearch). Contiene la definizione dei mapping dei documenti e le query booleane/full-text per il recupero dei dati.
 
